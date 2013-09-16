@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    awesome_print (1.1.0)
     httparty (0.11.0)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
@@ -12,5 +13,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   httparty
   json
