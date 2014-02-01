@@ -5,7 +5,7 @@ require 'awesome_print'
 class BpdAPI
   def initialize
     @credentials = YAML::load_file(File.join(__dir__, 'config.yml'))
-    @base_uri = "https://be-denali.herokuapp.com/api/v1/analyze/peers/"
+    @base_uri = "https://bpd.lbl.gov/api/v1/analyze/peers/"
     @headers = headers = { "Content-Type" => "application/json", "Authorization" => "ApiKey #{ @credentials["BPD_USER_NAME"] }:#{ @credentials["BPD_API_KEY"] }" }
   end
 
